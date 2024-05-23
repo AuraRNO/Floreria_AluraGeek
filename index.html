@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Principal/AluraGeek.png">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/productos.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/formulario.css">
+    <link rel="stylesheet" href="./assets/css/rodapie.css">
+
+    <title>Alura Geek</title>
+</head>
+<body>
+    
+
+
+        <section class='portfolio' id="portfolio">
+            <h2 class='section__title'>Floreria</h2>
+            <span class='section__subtitle'>hermosa</span>
+            <ul>
+                <li class='active'>Flores</li>
+                <li>Quienes somos</li>
+                <li>Productos</li>
+               
+            </ul>
+            <div class="container">
+                <div class="item">
+                    <img src="./Principal/ramo.jpg" alt="ramo" />
+                    <h3>Ramo sencillo</h3>
+                    <p>numero de Unidades: 5</p>
+                    <ul id="lista-productos">
+                        <li id="producto1"><button onclick="eliminarProducto('producto1')">Eliminar</button></li>
+            
+                    </ul>
+                </div>
+                <div class="item" >
+                    <img src="./Principal/arreglo.jpg" alt="Arreglo floral" />
+                    <h3>Arreglo floral personalizado</h3>
+                    <p>numero de unidades: 1</p>
+                    <ul id="lista-productos">
+                        <li id="producto2"><button onclick="eliminarProducto('producto2')">Eliminar</button></li>
+                        
+                    </ul>
+                    <p>numero de Unidades: 5</p>
+                </div>
+                <div class="item">
+                    <img src="./Principal/Arreglo balance.jpg" alt="arreglo con base" />
+                    <h3>Arreglo con base</h3>
+                    <p>numero de Unidades: 5</p>
+                    <ul id="lista-productos">
+                        <li id="producto3"><button onclick="eliminarProducto('producto3')">Eliminar</button></li>
+            
+                    </ul>
+                </div>
+                <div class="item">
+                    <img src="./Principal/decorración sencilla.jpg" alt="decoración" />
+                    <h3>Decorración para bodas</h3>
+                    <p>numero de Unidades: 3</p>
+                    <ul id="lista-productos">
+                        <li id="producto4"><button onclick="eliminarProducto('producto4')">Eliminar</button></li>
+            
+                    </ul>
+                </div>
+                <div class="item">
+                    <img src="./Principal/flores.jpg" alt="flores" />
+                    <h3>flores</h3>
+                    <p>numero de Unidades: 5</p>
+                    <ul id="lista-productos">
+                        <li id="producto5"><button onclick="eliminarProducto('producto5')">Eliminar</button></li>
+            
+                    </ul>
+                </div>
+                <div class="item">
+                    <img src="./Principal/flores.jpg" alt="flores" />
+                    <h3>Flores a mayoreo</h3>
+                    <p>numero de Unidades: 2</p>
+                    <ul id="lista-productos">
+                        <li id="producto6"><button onclick="eliminarProducto('producto6')">Eliminar</button></li>
+            
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+          
+
+
+        <section class="footer">
+            <div class="contenido__footer container">
+                <div class="contenido__footer_info">
+                    <a href="./index.html"><img class="header__logo" src="./Principal/AluraGeek.png" alt="logo de alura geek"></a>
+                    <ul  class="footer_links">
+                        <li class="footer__enlace"><a href="./screens/error404.html">Quienes somos</a></li>
+                        <li class="footer__enlace"><a href="./screens/error404.html">Politica de privacidad</a></li>
+                        <li class="footer__enlace"><a href="./screens/error404.html">Lenguaje de las flores</a></li>
+                    </ul>
+                </div>
+                <section class="registro-cuenta">
+                    <h2 class="registro-cuenta__titulo">Crear una cuenta</h2>
+                    <form action="procesar_registro.php" method="POST" class="registro-cuenta__formulario">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+
+                        <label for="contraseña">Contraseña:</label>
+                        <input type="password" id="contraseña" name="contraseña" required>
+
+                        <label for="confirmar_contraseña">Confirmar contraseña:</label>
+                        <input type="password" id="confirmar_contraseña" name="confirmar_contraseña" required>
+
+                        <button type="submit" class="registro-cuenta__boton">Crear cuenta</button>
+                    </form>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer class="rodapie">
+        <p class="rodapie__texto">Aura Rodríguez Nájar</p>
+        <p class="rodapie__texto">2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+<script src="./js/main.js" type="module"></script>
+</body>
+</html>
+

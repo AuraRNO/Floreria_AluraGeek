@@ -1,0 +1,72 @@
+.footer_formulario {
+    margin-top: 15px; /* Agrega un margen superior al formulario */
+}
+
+/* Estilos base */
+.footer {
+    padding: 3rem 0;
+    background-color: violet;
+}
+
+.contenido__footer {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+.contenido__footer_info {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinea los elementos al inicio del contenedor */
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Espacio entre enlaces */
+}
+
+.footer_formulario {
+    width: 30%;
+}
+.footer img {
+    width: 200px;
+}
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+    .footer {
+        padding: 1.5rem 0;
+    }
+
+    .contenido__footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenido__footer_info {
+        width: 90%;
+        text-align: center;
+    }
+
+    .footer_links {
+        margin-top: 1rem; /* Ajusta el espacio entre la información y los enlaces */
+    }
+
+    .footer_formulario {
+        width: 90%;
+    }
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contenido__footer_info {
+        width: 35%;
+    }
+
+    .footer_formulario {
+        width: 65%;
+    }
+}
+

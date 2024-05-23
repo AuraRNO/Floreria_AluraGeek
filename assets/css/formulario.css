@@ -1,0 +1,51 @@
+/* Estilos para el formulario en el footer */
+.registro-cuenta {
+    width: 100%; /* Ancho completo del contenedor */
+}
+
+.registro-cuenta__titulo {
+    text-align: center; /* Centra el título */
+}
+
+.registro-cuenta__formulario {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.registro-cuenta__formulario label {
+    margin-bottom: 0.5rem; /* Añade un pequeño espacio entre las etiquetas y los inputs */
+}
+
+.registro-cuenta__formulario input,
+.registro-cuenta__formulario button {
+    margin-bottom: 1rem; /* Añade un espacio entre los inputs y el botón */
+    width: 100%; /* Ancho completo de los inputs y el botón */
+    max-width: 300px; /* Establece un ancho máximo para evitar que se estiren demasiado */
+    padding: 0.5rem; /* Añade relleno para mejorar la apariencia */
+    border: 1px solid #ccc; /* Añade un borde para mejorar la apariencia */
+}
+
+.registro-cuenta__formulario button {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Quita el borde del botón */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s ease; /* Agrega una transición suave al color de fondo */
+}
+
+.registro-cuenta__formulario button:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
+}
+
+.registro-cuenta__formulario input:focus,
+.registro-cuenta__formulario button:focus {
+    outline: none; /* Quita el contorno predeterminado en el foco */
+    box-shadow: 0 0 3px rgba(0, 123, 255, 0.5); /* Agrega una sombra alrededor del input o botón en foco */
+}
+
+.registro-cuenta__formulario .error {
+    color: red; /* Color del texto de error */
+    font-size: 0.8rem; /* Tamaño de fuente más pequeño para los mensajes de error */
+}
+
